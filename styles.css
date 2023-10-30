@@ -1,0 +1,548 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #008df9;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00bfff;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Agrega estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    color: #888;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Estilos para la ventana emergente */
+.ventana-emergente {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.cerrar-ventana {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ventana-emergente img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/***********Estilos generales*******/
+
+#principal {
+    background-color: #ffffff;
+    text-align: center;
+    /* Centra el contenido en el centro de la página */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    /* Espacio interior alrededor del contenido */
+}
+
+#principal h1 {
+    font-size: 28px;
+    /* Tamaño de fuente del título principal */
+    color: #ffffff;
+    /* Color de texto oscuro */
+    margin-top: 20px;
+    /* Espacio superior */
+}
+
+#principal h3 {
+    font-size: 18px;
+    /* Tamaño de fuente del subtítulo */
+    color: #000000;
+    /* Color de texto gris */
+}
+
+#principal ul {
+    list-style-type: none;
+    /* Quita los marcadores de lista */
+    padding: 0;
+}
+
+#principal li {
+    margin-bottom: 10px;
+    /* Espacio entre elementos de lista */
+}
+
+#principal a {
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces */
+    color: #0077cc;
+    /* Color de enlaces azul */
+    font-weight: bold;
+    font-size: 20px;
+    /* Tamaño de fuente de enlaces */
+}
+
+#principal a:hover {
+    color: #005599;
+    /* Cambio de color al pasar el cursor sobre los enlaces */
+}
+
+
+
+/*************Ejercicio 1******************/
+
+.centered-title {
+    color: #333;
+    text-align: center;
+}
+
+
+/*****************Ejercicio3********************/
+#ejercicio3 h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+#ejercicio3 table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+#ejercicio3 th,
+#ejercicio3 td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+#ejercicio3 a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+#ejercicio3 a:hover {
+    color: #005599;
+}
+
+/********************Ejercicio4**********************/
+
+#ejercicio4 {
+    text-align: center;
+    /* Centra el contenido en el centro de la página */
+    background-color: #f2f2f2;
+    /* Fondo gris claro */
+    padding: 20px;
+    /* Espacio interior alrededor del contenido */
+}
+
+#ejercicio4 h2 {
+    font-size: 24px;
+    /* Tamaño de fuente del subtítulo */
+    color: #333;
+    /* Color de texto oscuro */
+    margin-top: 20px;
+    /* Espacio superior */
+}
+
+#ejercicio4 form {
+    width: 30%;
+    margin: 0 auto;
+    /* Centra el formulario horizontalmente */
+    padding: 20px;
+    background-color: #fff;
+    /* Fondo blanco para resaltar el formulario */
+}
+
+#ejercicio4 label,
+#ejercicio4 input {
+    display: block;
+    margin: 10px auto;
+    /* Centra el campo de entrada horizontalmente */
+}
+
+#ejercicio4 input[type="submit"] {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Añade margen superior al botón */
+}
+
+#ejercicio4 input[type="submit"]:hover {
+    background-color: #005599;
+}
+
+#ejercicio4 ul {
+    list-style: none;
+    /* Quita la viñeta de la lista */
+    padding: 0;
+}
+
+#ejercicio4 a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+#ejercicio4 a:hover {
+    color: #005599;
+}
+
+/********************ejercicio 5***********************/
+/* Estilos para la página de biografía */
+#biografia {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+#biografia h1 {
+    font-size: 28px;
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+#biografia p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#biografia a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+#biografia a:hover {
+    color: #005599;
+}
+
+/********************ejercicio 5_color***********************/
+/* Estilos para la página de biografía */
+#biografia_color {
+    font-family: Arial, sans-serif;
+    background-color: #82cd64;
+    padding: 20px;
+}
+
+#biografia_color h1 {
+    font-size: 34px;
+    color: #d30707;
+    margin-bottom: 20px;
+}
+
+#biografia_color p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#biografia_color a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+#biografia_color a:hover {
+    color: #005599;
+}
+
+/**************************ejercicio 6 **************/
+
+.slider {
+
+    width: 30%;
+    height: 600px;
+    overflow: hidden;
+
+
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 10s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider img {
+    background-color: #d30707;
+    width: 500px;
+    height: 500px;
+
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/**********************Ejercicio 7*********************************/
+
+/* Estilos para la barra de navegación */
+.barra-navegacion {
+    background-color: #0077cc;
+    text-align: center;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.barra-navegacion li {
+    display: inline;
+    margin: 10px;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    /* Transición de color al hacer clic */
+}
+
+.barra-navegacion a:hover {
+    color: #ff9900;
+    /* Color de enlace al hacer hover */
+}
+
+/* Estilos para las secciones */
+section {
+    height: 400px;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+/*******************************ejercicio 8*************************************/
+
+/* Estilos para dispositivos de escritorio */
+.barra-navegacion_ej8 {
+    background-color: #0077cc;
+    text-align: center;
+}
+
+.barra-navegacion_ej8 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.barra-navegacion_ej8 li {
+    display: inline;
+    margin: 10px;
+}
+
+.barra-navegacion_ej8 a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.barra-navegacion_ej8 a:hover {
+    color: #ff9900;
+}
+
+section {
+    height: 400px;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .barra-navegacion_ej8 {
+        background-color: #0077cc;
+        text-align: center;
+    }
+
+    .barra-navegacion_ej8 ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .barra-navegacion_ej8 li {
+        display: block;
+        margin: 10px;
+    }
+
+    section {
+        height: 300px;
+        margin: 10px;
+        background-color: #f5f5f5;
+    }
+}
+
+/****************************************ejercicio 9**************************/
+
+/* Estilos para la galería de imágenes */
+.galeria {
+    display: flex;
+    justify-content: space-around;
+}
+
+.galeria-imagen {
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+}
+
+/* Estilos para la ventana emergente */
+.ventana-emergente {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+#cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+#imagenCompleta {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 10%;
+}
